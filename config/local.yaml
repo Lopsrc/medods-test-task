@@ -1,0 +1,16 @@
+env: local
+listen:
+  bind_ip: localhost
+  port: 1234
+  timeout: 15s
+  idle_timeout: 60s
+storage:
+  host: db
+  port: 27017
+  database: medods
+  username: 
+  password: 
+auth:
+  signing_key: key_test #FIXME: test key. Don't store to yaml. Must be env variable.
+  access_token_ttl: 2h
+  refresh_token_ttl: 720h #30 days
